@@ -1,0 +1,152 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-------- UNICONS ------------->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!------------ CSS -------------------->
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+
+    <!--box icon link-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!---remix icon link--->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!----------- GOOGLE FONTS ------------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Yesra - Developer Portfolio</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul a {
+        list-decoration: none;
+        margin: 0 23px;
+        color: white;
+      }
+
+      nav ul a:hover {
+        list-decoration: none;
+        margin: 0 23px;
+        color: rgb(73, 62, 142);
+        font-size: 1.07rem;
+      }
+
+      .left {
+        font-size: 1.8rem;
+      }
+
+      .firstSection {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 80px 0;
+      }
+
+      /* .firstSection div {
+        width: 10%;
+      } */
+
+      .leftSection {
+        width: 36%;
+        font-size: 3rem;
+        margin: 30px 80px;
+      }
+
+      .rightSection img {
+        width: 80%;
+        height: 100%;
+        margin-top: 20px;
+      }
+
+      .leftSection .name {
+        color: rgb(134, 57, 194);
+      }
+
+      #element {
+        color: rgb(134, 57, 194);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Yesra's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hey, my name is
+          <span class="name">Yesra</span>
+          <div>and I am a passionate</div>
+          <!-- <div>Web developer.</div> -->
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="assessts/bg.png.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [" Web Developer. "],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
